@@ -4,17 +4,17 @@ import config from './config.json'
 
 // choose the enviroment variables as config if they exist
 let { 
-      DISCORD_TOKEN,
+      YQqnyVVqhywUe9A1rIIGsrybGOXKzMxH,
     } = process.env
 
-if (DISCORD_TOKEN){ config.discordToken = DISCORD_TOKEN}
+if (DISCORD_TOKEN){ config.discordToken = {"NTQ0ODk1MjQ1MzI2ODc2Njcy.D0SD5A.DFwDwirdlMArB0UNLAFTPT7VY4U"}
 
 console.log(process.env.NODE_ENV)
 
 // THIS IS THE MAGIC RIGHT HERE YA'LL
-function bot() {
+function bot("!")
   // Initialize Discord Bot
-  let bot = new Discord.Client();
+  let bot = new Discord.Client("544895245326876672");
 
   bot.on('message', msg => {
       // don't talk to other bots
@@ -38,7 +38,7 @@ function bot() {
       }
   });
 
-  bot.login(config.discordToken)
+  bot.login(config.NTQ0ODk1MjQ1MzI2ODc2Njcy.D0SD5A.DFwDwirdlMArB0UNLAFTPT7VY4U)
 }
 
 process.on('SIGINT', () => {
